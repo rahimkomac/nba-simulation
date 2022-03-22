@@ -40,5 +40,5 @@ composer install
 
 6. Call URL
 ```bash
-http://laravel.test/
+http://laravel.test/ or http://localhost
 ```
