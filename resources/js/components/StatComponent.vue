@@ -117,7 +117,6 @@ export default {
                 }
             }
 
-            console.log(match);
             if(this.matches.length > 0) {
                 let currentMatch = this.matches.find(m => m.fixtureId === match.fixtureId)
                 if(currentMatch) {
@@ -139,14 +138,10 @@ export default {
         async play() {
             try {
                 this.loading = true;
-                console.log('playing');
                 this.fixtureState = 'playing';
-                console.log(this.url);
                 const res = await axios.get(this.url);
                 this.fixtureSchedule = res.data.schedule;
                 this.matches = res.data.matchData;
-                console.log(res);
-                console.log(res.data.matchData);
             } catch (err) {
                 this.errors.push(err);
             }
@@ -198,7 +193,6 @@ export default {
                 },
                 { text: 'Points', value: 'points' },
                 { text: 'Assists', value: 'assist' }
-                //{ text: 'Status', value: 'status' }
             ],
             matches: this.matchData
         }
