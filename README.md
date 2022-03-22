@@ -16,6 +16,12 @@ git clone https://github.com/rahimkomac/nba-simulation.git
 cd nba-simulation
 ```
 
+2. Composer Install
+
+```bash
+composer install
+```
+
 3. Install dependencies
 
 ```bash
