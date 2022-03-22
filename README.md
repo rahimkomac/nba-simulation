@@ -39,7 +39,7 @@ composer install
 ./vendor/bin/sail npm run dev
 ```
 
-4. Call URL
+6. Call URL
 ```bash
 http://laravel.test/
 ```
