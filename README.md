@@ -16,13 +16,19 @@ git clone https://github.com/rahimkomac/nba-simulation.git
 cd nba-simulation
 ```
 
-2. Composer Install
+3. set env
+
+```bash
+cp .env.example .env
+```
+
+4. Composer Install
 
 ```bash
 composer install
 ```
 
-3. Install dependencies
+5. Install dependencies
 
 ```bash
 ./vendor/bin/sail up -d
